@@ -1,0 +1,78 @@
+.header {
+  height: 100vh;
+  color: white;
+  // color: black;
+
+  .navbar {
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background-color: rgba(1, 1, 1, 0.4);
+    position: fixed;
+    width: 100%;
+
+    span {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    .navbar-ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        margin: 0 20px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-weight: bold;
+        &:hover {
+          color: #8000FF;
+        }
+      }
+    }
+  }
+
+  .details-container {
+    position: relative;
+    color: white;
+    .bg-img {
+      background-image: url('../../images/hero-bg.jpg');
+      height: 100vh;
+      width: 100%;
+      background-position:center;
+      background-size: cover;
+      position: absolute;
+      z-index: -1;
+      &::after {
+        content: '';
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+      }
+    }
+
+    .my-info {
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 200px;
+      h1 {
+        font-size: 4rem;
+      }
+      h2 {
+          font-size: 2rem;
+      }
+      h3 {
+          font-weight:bold;
+      }
+      p {
+        max-width: 600px;
+      }
+    }
+  }
+}
