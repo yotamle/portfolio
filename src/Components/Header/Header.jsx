@@ -1,5 +1,4 @@
 import './Header.scss';
-
 const Header = () => {
   return (
     <div className="header">
@@ -14,17 +13,18 @@ const Header = () => {
       </div>
 
       <div className="details-container">
-        <div className="bg-img"></div>
-        <div className="my-info">
+         <div className="my-info">
           <h1>Hello!</h1>
-          <h2>I'm Yotam Levy</h2>
-          <h3>Full Stack Developer</h3>
+          <h2>I'm <strong>Yotam Levy,</strong></h2>
+          <span>Full Stack Developer</span>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi,
             recusandae. Lorem, ipsum dolor sit amet consectetur adipisicing
             elit. Tempora quas ea numquam error, molestiae asperiores minima.
             Voluptas modi quod eligendi.
           </p>
+        </div>
+        <div className="my-icon">
         </div>
       </div>
     </div>

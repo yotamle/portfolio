@@ -8,5 +8,11 @@
 
 body {
     font-family: 'Mulish', sans-serif;
-    background-color: rgb(7, 7, 7);
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.fix-width {
+    max-width: 1600px ;
+    margin: auto;
 }

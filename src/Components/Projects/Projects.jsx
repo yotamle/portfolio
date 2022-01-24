@@ -1,21 +1,25 @@
 import './Projects.scss';
-import pc from '../../images/country.png';
-
 const Projects = () => {
   return (
     <div className="projects-container">
-
       <div className="project-details">
-        <div className='details'>
-        <h5>Project_name</h5>
-        <h3>Project_url</h3>
-        <p>project_details</p>
+        <div className="details">
+          <h2>Countries Finder</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+            voluptates.
+          </p>
+
+          <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi unde,
+            omnis praesentium ad voluptatem eligendi saepe maiores quisquam ut
+            optio!
+          </section>
+          <div><a href="">Link</a></div>
         </div>
       </div>
 
-      {/* <div className="project-img">
-        <div className="poly-bg"></div>
-      </div> */}
+      <div className="project-img">right</div>
     </div>
   );
 };
