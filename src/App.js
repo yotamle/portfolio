@@ -10,7 +10,7 @@ function App() {
       <Header />
       <div className="fix-width">
       <Projects />
-      {/* <About /> */}
+      <About />
       <Contact />
       </div>
     </div>

@@ -29,9 +29,10 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact-me">
-        <h2>Contact me</h2>
+        <h2 className="title">Contact me</h2>
         <span>Feel free to contact me any time. through any method below.</span>
       </div>
+
       <div className="contact-wrapper">
         <div className="form">
           <form ref={formRef} onSubmit={handleSubmit}>
@@ -47,7 +48,6 @@ const Contact = () => {
               <label>Message</label>
               <textarea name="user_message" required></textarea>
             </div>
-
             <button type="submit">Send!</button>
           </form>
         </div>
@@ -85,6 +85,9 @@ const Contact = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="c-by">
+        <small >© 2022 Yotam Levy</small>
       </div>
     </div>
   );
