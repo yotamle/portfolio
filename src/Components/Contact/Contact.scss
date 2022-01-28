@@ -4,13 +4,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Mulish', sans-serif;
+  background-color: #131313;
+
   .contact-me {
     color: white;
     text-align: center;
+
     .title {
       margin: 20px 0;
       font-size: 1.8rem;
-      text-decoration: underline #0583f5;
+      text-decoration: underline;
+      font-family: 'Ubuntu', sans-serif;
     }
     span {
       font-size: 1rem;
@@ -19,7 +24,6 @@
   }
 
   .contact-wrapper {
-
     .form {
       display: flex;
       justify-content: center;
@@ -39,7 +43,6 @@
           height: 40px;
           border: none;
           color: white;
-          border-radius: 10px;
           background-color: #1d1d1d;
           font-size: 0.9rem;
           font-family: inherit;
@@ -47,11 +50,13 @@
           &:focus {
             outline: none;
           }
+          @media only screen and (max-width: 872px) {
+            width: 400px;
+          }
         }
         textarea {
           padding: 15px;
           width: 100%;
-          border-radius: 10px;
           border: none;
           background-color: #1d1d1d;
           color: white;
@@ -63,28 +68,42 @@
             outline: none;
           }
         }
+        @media only screen and (max-width: 872px) {
+          
+          margin: 50px 0 0 0;
+        }
       }
       button {
         color: white;
-        padding: 10px 32px;
+        padding: 16px 50px;
         background-color: #0583f5;
         border: none;
-        border-radius: 20px;
-        font-size: 0.95rem;
+        font-size: 1rem;
         font-weight: bold;
+        margin-bottom: 20px;
         cursor: pointer;
+        &:hover {
+          background-color:#059df5;
+        }
         &:active {
           transform: scale(0.96);
         }
+        @media only screen and (max-width: 872px) {
+          margin-top: 20px;
+          width: 400px;
+        }
       }
+
     }
 
     .my-network {
+
       margin-top:40px;
       display: flex;
       justify-content: center;
       align-items: flex-end;
       .network {
+        z-index: 1;
         display: flex;
         list-style-type: none;
         li {
@@ -106,5 +125,7 @@
     text-align: center;
     font-size: 0.8rem;
     margin-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 1;
   }
 }

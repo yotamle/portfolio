@@ -1,9 +1,10 @@
 import './About.scss';
-import { SiHtml5,SiCss3,SiJavascript,SiMongodb,SiFirebase} from 'react-icons/si';
-import {FaSass,FaReact,FaNodeJs, FaNpm,FaGitAlt} from 'react-icons/fa'
+import ICONS from './icons';
+
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container" id="about">
+      <div className='bg-layer shape'></div>
       <h2 className="title">About me</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque alias
@@ -16,21 +17,58 @@ const About = () => {
         illo eveniet rerum recusandae autem ducimus ipsum numquam, corporis
         inventore doloribus perspiciatis dolores!
       </p>
-      <h3>Skills</h3>
       <div className="skills">
-        <ul className='ul-flex'>
-          <li className='vscode-icons:file-type-css'><SiHtml5/></li>
-          <li><SiCss3/></li>
-          <li><FaSass/></li>
-          <li><SiJavascript/></li>
-          <li><FaReact/></li>
-
-          <li><FaNodeJs/></li>
-          <li><SiMongodb/></li>
-          <li><SiFirebase/></li>
-          <li><FaNpm/></li>
-          <li><FaGitAlt/></li>
-        </ul>
+      <h3>Skills</h3>
+        <div className="skills-flex">
+          <div>
+            <img src={ICONS.logoHTML} alt="" />
+            <span>HTML</span>
+          </div>
+          <div>
+            <img src={ICONS.logoCSS} alt="" />
+            <span>CSS</span>
+          </div>
+          <div>
+            <img src={ICONS.logoSASS} alt="" />
+            <span>SASS</span>
+          </div>
+          <div>
+            <img src={ICONS.logoJS} alt="" />
+            <span>JavaScript</span>
+          </div>
+          <div>
+            <img src={ICONS.logoReact} alt="" />
+            <span>React</span>
+          </div>
+          <div>
+            <img src={ICONS.logoNode} alt="" />
+            <span>Node</span>
+          </div>
+          <div>
+            <img src={ICONS.logoExpress} style={{padding:"6px 0", width:"30px"}} alt="" />
+            <span>Express</span>
+          </div>
+          <div>
+            <img src={ICONS.logoNpm} alt="" />
+            <span>NPM</span>
+          </div>
+          <div>
+            <img src={ICONS.logoMongo} alt="" />
+            <span>MongoDB</span>
+          </div>
+          <div>
+            <img src={ICONS.logoFirebase} alt="" />
+            <span>Firebase</span>
+          </div>
+          <div>
+            <img src={ICONS.logoSql} alt="" />
+            <span>SQL</span>
+          </div>
+          <div>
+            <img src={ICONS.logoGit} alt="" />
+            <span>Git</span>
+          </div>
+        </div>
       </div>
     </div>
   );
