@@ -1,34 +1,29 @@
 import './About.scss';
 import ICONS from './icons';
 
-
 const About = () => {
   return (
     <div className="about-container" id="about">
       <div className="bg-layer shape"></div>
       <h2 className="title">Who am I?</h2>
-      {/* <div className="my-photo">
-
-      <img src={about_me} alt="" />
-      </div> */}
       <p>
-        I'm Yotam Levy, 27 years old and from Israel.
-        Full-stack developer with passion to explore
-        and learn new things every day.<br />
-        Programming has been an interest of mine for many years.
-        In my free time I love to travel, to working out and play computer games.
-        I'm looking for my next challenge to take my programming skills to another level.
-        
-
-
-        
-
-        
-
-        
+        I'm Yotam Levy, 27 years old and from Israel. Full-stack developer with
+        passion to explore and learn new things every day.
+        <br />
+        Programming has been an interest of mine for many years. In my free time
+        I love to travel, to working out and play computer games. I'm looking
+        for my next challenge to take my programming skills to another level.
       </p>
 
-      <button  className='resume-btn'><a href="">My Resume</a></button>
+      <button className="resume-btn">
+        <a
+          href="https://docs.google.com/document/d/1AckzgvEUqwhjNCBJ5M2rVEDhAg_PC6VK/edit?usp=sharing&ouid=100231535508318435485&rtpof=true&sd=true"
+          target="_blank"
+          rel="noreferrer"
+        >
+          My Resume
+        </a>
+      </button>
       <div className="skills">
         <h3>Skills & Tools</h3>
         <div className="skills-flex">
