@@ -1,37 +1,78 @@
 .about-container {
-  height: 100vh;
-  padding: 20px 10%;
+  height: auto;
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #FFFFFF;
-  color: black;
+  color: white;
 
-
+  @media only screen and (max-width: 872px) {
+    height: auto;
+  }
 
   .title {
-    margin: 20px 0;
     font-size: 1.8rem;
-    text-decoration: underline;
     font-family: 'Ubuntu', sans-serif;
   }
+
+  .my-photo {
+    width: 300px;
+    height: 300px;
+    background-color: #24263f;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    img {
+      width: 170px;
+      z-index: -1;
+    }
+  }
+
   p {
-    max-width: 400px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+    max-width: 350px;
+    line-height: 2;
+    margin: 20px 0;
     font-family: 'Mulish', sans-serif;
-    // text-align: center;
+    font-size: 1.06rem;
+    @media only screen and (max-width: 872px) {
+      max-width: 300px;
+    }
+
+  }
+  .resume-btn {
+    color: white;
+    padding: 10px 24px;
+    background-color: #0a85ed;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    &:hover {
+      background-color: #2196fc;
+      transform: scale(1.02);
+    }
   }
 
 
   .skills {
-    margin-top: 5%;
+    margin: 6% 0;
+    @media only screen and (max-width: 872px) {
+      margin-top: 10%;
+    }
+
     h3 {
       font-size: 1.4rem;
-      text-decoration: underline;
       font-family: 'Ubuntu', sans-serif;
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     .skills-flex {
@@ -40,20 +81,15 @@
       align-items: center;
       list-style-type: none;
       flex-wrap: wrap;
-
       div {
         font-family: 'Ubuntu', sans-serif;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-        // background-color: #31313100;
-        width: 70px;
-        height: 70px;
-        margin: 5px;
-        font-size: 0.70rem;
+        width: 60px;
+        height: 60px;
+        font-size: 0.7rem;
         img {
           width: 30px;
         }

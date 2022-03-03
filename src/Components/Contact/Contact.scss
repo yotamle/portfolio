@@ -5,7 +5,6 @@
   flex-direction: column;
   align-items: center;
   font-family: 'Mulish', sans-serif;
-  background-color: #131313;
 
   .contact-me {
     color: white;
@@ -14,7 +13,6 @@
     .title {
       margin: 20px 0;
       font-size: 1.8rem;
-      text-decoration: underline;
       font-family: 'Ubuntu', sans-serif;
     }
     span {
@@ -38,12 +36,12 @@
           font-weight: bold;
         }
         input {
-          padding: 0 15px;
+          padding: 10px 15px;
           width: 500px;
           height: 40px;
           border: none;
           color: white;
-          background-color: #1d1d1d;
+          background-color: #24263f;
           font-size: 0.9rem;
           font-family: inherit;
 
@@ -51,54 +49,51 @@
             outline: none;
           }
           @media only screen and (max-width: 872px) {
-            width: 400px;
+            width: 320px;
           }
         }
         textarea {
           padding: 15px;
-          width: 100%;
           border: none;
-          background-color: #1d1d1d;
+          background-color: #24263f;
           color: white;
           resize: none;
           height: 150px;
+          width: 500px;
           font-size: 0.9rem;
           font-family: inherit;
           &:focus {
             outline: none;
           }
-        }
-        @media only screen and (max-width: 872px) {
-          
-          margin: 50px 0 0 0;
+          @media only screen and (max-width: 872px) {
+            width: 320px;
+          }
         }
       }
       button {
         color: white;
         padding: 16px 50px;
-        background-color: #0583f5;
+        background-color: #0a85ed;
         border: none;
         font-size: 1rem;
         font-weight: bold;
         margin-bottom: 20px;
         cursor: pointer;
         &:hover {
-          background-color:#059df5;
+          background-color: #2196fc;
         }
         &:active {
           transform: scale(0.96);
         }
         @media only screen and (max-width: 872px) {
           margin-top: 20px;
-          width: 400px;
+          width: 320px;
         }
       }
-
     }
 
     .my-network {
-
-      margin-top:40px;
+      margin-top: 40px;
       display: flex;
       justify-content: center;
       align-items: flex-end;
@@ -127,5 +122,6 @@
     margin-top: 10px;
     font-family: 'Ubuntu', sans-serif;
     z-index: 1;
+    color: rgba(209, 209, 209, 0.61);
   }
 }

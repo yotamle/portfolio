@@ -1,24 +1,36 @@
 import './About.scss';
 import ICONS from './icons';
 
+
 const About = () => {
   return (
     <div className="about-container" id="about">
-      <div className='bg-layer shape'></div>
-      <h2 className="title">About me</h2>
+      <div className="bg-layer shape"></div>
+      <h2 className="title">Who am I?</h2>
+      {/* <div className="my-photo">
+
+      <img src={about_me} alt="" />
+      </div> */}
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque alias
-        praesentium, aliquam, cum tempore id eligendi aspernatur, sit soluta
-        voluptas officia vero! Distinctio hic facere necessitatibus amet odit
-        error repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Suscipit quia aspernatur soluta ullam facere tempore fuga ipsam cum, aut
-        debitis placeat nulla laborum unde dolorum nesciunt, tenetur dolores
-        perspiciatis dicta ex laboriosam delectus! Atque illum tempore odio,
-        illo eveniet rerum recusandae autem ducimus ipsum numquam, corporis
-        inventore doloribus perspiciatis dolores!
+        I'm Yotam Levy, 27 years old and from Israel.
+        Full-stack developer with passion to explore
+        and learn new things every day.<br />
+        Programming has been an interest of mine for many years.
+        In my free time I love to travel, to working out and play computer games.
+        I'm looking for my next challenge to take my programming skills to another level.
+        
+
+
+        
+
+        
+
+        
       </p>
+
+      <button  className='resume-btn'><a href="">My Resume</a></button>
       <div className="skills">
-      <h3>Skills</h3>
+        <h3>Skills & Tools</h3>
         <div className="skills-flex">
           <div>
             <img src={ICONS.logoHTML} alt="" />
@@ -45,7 +57,11 @@ const About = () => {
             <span>Node</span>
           </div>
           <div>
-            <img src={ICONS.logoExpress} style={{padding:"6px 0", width:"30px"}} alt="" />
+            <img
+              src={ICONS.logoExpress}
+              style={{ padding: '6px 0', width: '30px' }}
+              alt=""
+            />
             <span>Express</span>
           </div>
           <div>

@@ -2,37 +2,12 @@
   height: 100vh;
   color: white;
   position: relative;
-  // background: linear-gradient(90deg, #0062ff 0%, #1ecffc 100%);
-  background: linear-gradient(90deg, #e64742 0% ,#f59b68 100%);
-  border: transparent;
-
-  .header-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-
-  .header-wave svg {
-    position: relative;
-    display: block;
-    width: calc(208% + 1.3px);
-    height: 106px;
-    transform: rotateY(180deg);
-  }
-
-  .header-wave .shape-fill {
-    fill: #0f0f0f;
-  }
 
   .back-to-top {
     position: fixed;
     bottom: 15px;
     right: 15px;
-    background-color: #0583f5;
+    background-color: #0a85ed;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -41,10 +16,17 @@
     align-items: center;
     cursor: pointer;
     font-size: 1.2rem;
+    @media only screen and (max-width: 872px) {
+      display: none;
+    }
   }
+  .show_back-to-top {
+    display: none;
+  }
+
   .navbar {
     font-family: 'Mulish', sans-serif;
-    padding-top: 20px;
+    padding: 1rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -83,7 +65,7 @@
       li {
         margin: 0 30px;
         cursor: pointer;
-        font-size: 0.9rem;
+        font-size: 0.92rem;
         font-weight: bold;
         padding: 6px 15px;
         &:hover {
@@ -102,28 +84,37 @@
     .my-info {
       flex: 1;
       padding: 12% 0 0 10%;
+      @media only screen and (max-width: 872px) {
+        padding: 30% 5%;
+      }
+
       h1 {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         margin-bottom: 1.5rem;
       }
-      h2 {
-        font-size: 2.2rem;
-        font-weight: lighter;
-        margin-bottom: 5px;
+      strong {
+        color: #0a85ed;
       }
-      span {
-        font-size: 1.4rem;
-        font-weight: bold;
+      h2 {
+        font-size: 2.8rem;
+        margin: 40px 0;
       }
       p {
         margin-top: 15px;
         max-width: 600px;
         line-height: 1.5;
+        font-size: 1.1rem;
+        font-family: 'Mulish', sans-serif;
+        @media only screen and (max-width: 472px) {
+          max-width: 300px;
+        }
+        
+        
       }
       .view-work {
-        color: #0583f5;
+        color: white;
         padding: 10px 24px;
-        background-color: #ececec;
+        background-color: #0a85ed;
         border: none;
         font-size: 0.95rem;
         font-weight: bold;
@@ -131,50 +122,45 @@
         cursor: pointer;
         font-family: 'Mulish', sans-serif;
         &:hover {
-          background-color: rgba(255, 255, 255);
+          background-color: #2196fc;
+        }
+        @media only screen and (max-width: 872px) {
+          width: 98%;
+          padding: 16px 24px;
         }
       }
 
       @media only screen and (max-width: 872px) {
         h1 {
-          font-size: 2.5rem;
+          margin-top: 30px;
+          font-size: 2.6rem;
         }
         h2 {
-          font-size: 1.5rem;
-          font-weight: lighter;
+          margin: 40px 0;
+          font-size: 1.9rem;
           margin-bottom: 5px;
         }
-        span {
-          font-size: 0.9rem;
-          font-weight: bold;
-        }
         p {
-          margin-top: 3px;
-          line-height: 1.2;
+          margin-top: 50px;
+          line-height: 1.5;
+        }
+        .view-work {
+          margin-top: 60px;
         }
       }
     }
     .my-icon {
-      margin-top: 3%;
       display: flex;
-      align-items: center;
       justify-content: center;
-      .hero-animation {
-        width: 900px;
+      align-items: center;
+      position: absolute;
+      bottom: 200px;
+      right: 150px;
+      img {
+        width: 800px
       }
-      .scroll-down {
-        font-size: 10px;
-      }
-      @media only screen and (max-width: 1300px) {
-        .hero-animation {
-          width: 650px;
-        }
-      }
-      @media only screen and (max-width: 872px) {
-        margin: 0;
-        .hero-animation {
-          width: 450%;
-        }
+      @media only screen and (max-width: 1630px){
+        display: none;
       }
     }
     @media only screen and (max-width: 872px) {

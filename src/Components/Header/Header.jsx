@@ -1,29 +1,29 @@
 import './Header.scss';
 import './Menu.scss';
-import lottie from 'lottie-web';
-import { useEffect, useRef, useState } from 'react';
+import hero from './hero.svg';
+import { useEffect, useState } from 'react';
 import { GoThreeBars } from 'react-icons/go';
 import { FaTimes } from 'react-icons/fa';
 import { IoIosArrowUp } from 'react-icons/io';
 import { Link } from 'react-scroll';
 
 const Header = () => {
-  const animationContainer = useRef(null);
-  const [menu, setMenu] = useState(true);
+  const [scroll, setScroll] = useState(true);
+  const [menu, setMenu] = useState(false);
+
+  const controlScroll = () => {
+    window.scrollY > 100 ? setScroll(false) : setScroll(true);
+  };
 
   useEffect(() => {
-    lottie.loadAnimation({
-      container: animationContainer.current,
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      animationData: require('./animation.json'),
-    });
+    window.addEventListener('scroll', controlScroll);
+    return () => {
+      window.removeEventListener('scroll', controlScroll);
+    };
   }, []);
 
-
   const MenuBar = (
-    <div className="menu-container" id="home">
+    <div className={`menu-container ${menu && 'toggleMenu'}`} id="home">
       <div className="exit-menu">
         <FaTimes onClick={() => setMenu(!menu)} />
       </div>
@@ -73,23 +73,21 @@ const Header = () => {
   );
 
   return (
-    <div className="header" id='header'>
+    <div className="header" id="header">
       <div className="bg-layer"></div>
-<div className="header-wave">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
-    </svg>
-</div>
       <div className="navbar">
-     <div className="back-to-top"> <Link to="header" smooth="true" duration={1000}><IoIosArrowUp/></Link></div>
-        <span className="logo">YL.</span>
-        {menu ? (
-          <span className="menu" onClick={() => setMenu(!menu)}>
-            <GoThreeBars />
-          </span>
-        ) : (
-          MenuBar
-        )}
+        <div className={`back-to-top ${scroll && 'show_back-to-top'}`}>
+          <Link to="header" smooth="true" duration={400}>
+            <IoIosArrowUp />
+          </Link>
+        </div>
+        <span className="logo">
+          YL
+        </span>
+        <span className="menu" onClick={() => setMenu(!menu)}>
+          <GoThreeBars />
+          {MenuBar}
+        </span>
         <ul className="navbar-ul">
           <li>Home</li>
           <li>
@@ -112,21 +110,19 @@ const Header = () => {
 
       <div className="details-container">
         <div className="my-info">
-          <h1>Hi!</h1>
-          <h2>
-            I'm <strong>Yotam Levy</strong>
-          </h2>
-          <span>Full Stack Developer</span>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi,
-            recusandae. Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Tempora quas ea numquam error, molestiae asperiores minima.
-            Voluptas modi quod eligendi.
-          </p>
-          <button className="view-work"><Link to="projects" smooth="true" duration={1000}>View my work.</Link></button>
+          <h1>
+            Hi, Im <strong>Yotam</strong>
+          </h1> 
+          <h2>full-stack developer</h2>
+          <h2>with a passion for design.</h2>
+          <button className="view-work">
+            <Link to="projects" smooth="true" duration={1000}>
+              View my work.
+            </Link>
+          </button>
         </div>
         <div className="my-icon">
-          <div className="hero-animation" ref={animationContainer}></div>
+          <img src={hero} alt="hero icon" />
         </div>
       </div>
     </div>

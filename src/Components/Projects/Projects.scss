@@ -1,54 +1,83 @@
 .projects-container {
-  height: 100vh;
-  padding: 10px 10%;
-  // background-color: white;
+  height: auto;
+  padding: 2rem 0;
+  @media only screen and (max-width: 872px) {
+    height: auto;
+  }
+
   .title {
     margin: 20px 0;
     font-size: 1.8rem;
-    text-decoration: underline;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     color: white;
   }
   .projects {
+    font-family: 'Mulish', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    font-family: 'Mulish', sans-serif;
-    margin-top: 30px;
+    flex-direction: column;
     .project {
-      // font-family: 'Nunito', sans-serif;
-      max-width: 400px;
-      margin: 10px;
-      padding: 30px;
-      // background-color: #1d1d1d;
-      background-color: #fff;
+      width: 800px;
+      height: auto;
+      background-color: #24263f;
+      padding: 40px;
       border-radius: 10px;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      color: white;
+      margin: 10px;
+      .project-flex {
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
+        flex-direction: row;
+        @media only screen and (max-width: 872px) {
+          flex-direction: column;
+        }
+      }
       h2 {
-        // color: #8609ec;
-        font-size: 1.2rem;
-        margin-bottom: 5px; 
+        font-size: 1.1rem;
+        text-decoration: underline;
       }
       p {
-        max-width: 500px;
-        line-height: 1.3;
-        margin-bottom: 10px
+        max-width: 400px;
+        line-height: 1.5;
+        margin: 15px;
+        @media only screen and (max-width: 872px) {
+          min-width: 200px;
+          margin: 20px auto;
+          font-size: 1rem;
+        }
+
       }
       span {
-        margin: 0 10px 0 0;
+        margin: 0 10px;
         font-size: 0.9rem;
+        .in-process {
+          text-decoration: none;
+          color: white;
+          padding: 8px 10px;
+          background-color: #0a85ed;
+          font-weight: bold;
+
+        }
         a {
           text-decoration: none;
           color: white;
-          text-decoration: underline;
+          padding: 8px 20px;
+          background-color: #0a85ed;
+          font-weight: bold;
+          &:hover {
+            background-color: #2196fc;
+          }
         }
+      }
+      
+      @media only screen and (max-width: 872px) {
+        width: 350px;
+        height: auto;
       }
     }
   }
-  
-
 }
-
-
+ 
