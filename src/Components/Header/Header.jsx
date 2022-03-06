@@ -81,9 +81,7 @@ const Header = () => {
             <IoIosArrowUp />
           </Link>
         </div>
-        <span className="logo">
-          YL
-        </span>
+        <span className="logo">YL</span>
         <span className="menu" onClick={() => setMenu(!menu)}>
           <GoThreeBars />
           {MenuBar}
@@ -112,14 +110,12 @@ const Header = () => {
         <div className="my-info">
           <h1>
             Hi, Im <strong>Yotam</strong>
-          </h1> 
+          </h1>
           <h2>full-stack developer</h2>
           <h2>with a passion for design.</h2>
-          <button className="view-work">
-            <Link to="projects" smooth="true" duration={1000}>
-              View my work.
-            </Link>
-          </button>
+          <Link to="projects" smooth="true" duration={1000}>
+            <button className="view-work">View my work.</button>
+          </Link>
         </div>
         <div className="my-icon">
           <img src={hero} alt="hero icon" />

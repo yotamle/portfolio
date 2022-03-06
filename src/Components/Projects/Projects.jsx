@@ -84,7 +84,7 @@ const Projects = () => {
                 </a>
               </span>
               <span>
-                <strong className='in-process'>in process</strong>
+                <strong className="in-process">in process</strong>
               </span>
             </div>
           </div>
@@ -92,8 +92,11 @@ const Projects = () => {
         <div className="project">
           <h2>My Portfolio</h2>
           <div className="project-flex">
-            <p>My personal portfolio where you can connect with me.<br />
-            build with react, scss.</p>
+            <p>
+              My personal portfolio where you can connect with me.
+              <br />
+              build with react, scss.
+            </p>
             <div>
               <span>
                 <a
@@ -102,15 +105,6 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   Github
-                </a>
-              </span>
-              <span>
-                <a
-                  href="https://www.yotamlevy.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Link
                 </a>
               </span>
             </div>

@@ -1,3 +1,5 @@
+@use '../../variables';
+
 .projects-container {
   height: auto;
   padding: 2rem 0;
@@ -10,7 +12,7 @@
     font-size: 1.8rem;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    color: white;
+    color: variables.$white-color;
   }
   .projects {
     font-family: 'Mulish', sans-serif;
@@ -21,15 +23,15 @@
     .project {
       width: 800px;
       height: auto;
-      background-color: #24263f;
+      background-color: variables.$second-bg-color;
       padding: 40px;
       border-radius: 10px;
-      color: white;
+      color: variables.$white-color;
       margin: 10px;
       .project-flex {
         display: flex;
         justify-content: center;
-        align-items:flex-end;
+        align-items: flex-end;
         flex-direction: row;
         @media only screen and (max-width: 872px) {
           flex-direction: column;
@@ -48,31 +50,29 @@
           margin: 20px auto;
           font-size: 1rem;
         }
-
       }
       span {
         margin: 0 10px;
         font-size: 0.9rem;
         .in-process {
           text-decoration: none;
-          color: white;
+          color: variables.$white-color;
           padding: 8px 10px;
-          background-color: #0a85ed;
+          background-color: variables.$primaryBtn-color;
           font-weight: bold;
-
         }
         a {
           text-decoration: none;
-          color: white;
+          color: variables.$white-color;
           padding: 8px 20px;
-          background-color: #0a85ed;
+          background-color: variables.$primaryBtn-color;
           font-weight: bold;
           &:hover {
-            background-color: #2196fc;
+            background-color: variables.$hoverBtn-color;
           }
         }
       }
-      
+
       @media only screen and (max-width: 872px) {
         width: 350px;
         height: auto;
@@ -80,4 +80,3 @@
     }
   }
 }
- 

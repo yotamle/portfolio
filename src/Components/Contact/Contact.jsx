@@ -1,11 +1,18 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import './Contact.scss';
 import emailjs from '@emailjs/browser';
 import { BsGithub, BsLinkedin, BsWhatsapp } from 'react-icons/bs';
 
+const Result = () => {
+  return (
+    <p className="msg-success">Your message has been sent successfully.</p>
+  );
+};
+
 const Contact = () => {
   const formRef = useRef();
 
+  const [result, showResult] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -24,7 +31,13 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+    e.target.reset();
+    showResult(true);
   };
+
+  setTimeout(() => {
+    showResult(false);
+  }, 5000);
 
   return (
     <div className="contact-container" id="contact">
@@ -48,7 +61,8 @@ const Contact = () => {
               <label>Message</label>
               <textarea name="user_message" required></textarea>
             </div>
-            <button type="submit">Send!</button>
+            <button type="submit">Submit</button>
+            {result ? <Result /> : null}
           </form>
         </div>
 
@@ -64,7 +78,6 @@ const Contact = () => {
               </a>
             </li>
             <li>
-              {' '}
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -74,7 +87,6 @@ const Contact = () => {
               </a>
             </li>
             <li>
-              {' '}
               <a
                 target="_blank"
                 rel="noreferrer"

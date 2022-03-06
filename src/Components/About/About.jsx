@@ -8,22 +8,19 @@ const About = () => {
       <h2 className="title">Who am I?</h2>
       <p>
         I'm Yotam Levy, 27 years old and from Israel. Full-stack developer with
-        passion to explore and learn new things every day.
-        <br />
-        Programming has been an interest of mine for many years. In my free time
-        I love to travel, to working out and play computer games. I'm looking
-        for my next challenge to take my programming skills to another level.
+        passion to explore and learn new things every day. Programming has been
+        an interest of mine for many years. In my free time I love traveling, working out and play video
+        games. I'm looking for my next challenge to take my programming skills
+        to another level.
       </p>
 
-      <button className="resume-btn">
-        <a
-          href="https://docs.google.com/document/d/1AckzgvEUqwhjNCBJ5M2rVEDhAg_PC6VK/edit?usp=sharing&ouid=100231535508318435485&rtpof=true&sd=true"
-          target="_blank"
-          rel="noreferrer"
-        >
-          My Resume
-        </a>
-      </button>
+      <a
+        href="https://docs.google.com/document/d/1AckzgvEUqwhjNCBJ5M2rVEDhAg_PC6VK/edit?usp=sharing&ouid=100231535508318435485&rtpof=true&sd=true"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button className="resume-btn">My Resume</button>
+      </a>
       <div className="skills">
         <h3>Skills & Tools</h3>
         <div className="skills-flex">

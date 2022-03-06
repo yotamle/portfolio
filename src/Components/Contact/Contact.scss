@@ -1,3 +1,4 @@
+@use '../../variables';
 .contact-container {
   height: auto;
   padding: 20px 10%;
@@ -7,7 +8,7 @@
   font-family: 'Mulish', sans-serif;
 
   .contact-me {
-    color: white;
+    color: variables.$white-color;
     text-align: center;
 
     .title {
@@ -17,7 +18,7 @@
     }
     span {
       font-size: 1rem;
-      color: lightgray;
+      color: variables.$lightgray-color;
     }
   }
 
@@ -32,7 +33,7 @@
           font-size: 1rem;
           display: block;
           margin: 20px 0;
-          color: white;
+          color: variables.$white-color;
           font-weight: bold;
         }
         input {
@@ -40,8 +41,8 @@
           width: 500px;
           height: 40px;
           border: none;
-          color: white;
-          background-color: #24263f;
+          color: variables.$white-color;
+          background-color: variables.$second-bg-color;
           font-size: 0.9rem;
           font-family: inherit;
 
@@ -55,8 +56,8 @@
         textarea {
           padding: 15px;
           border: none;
-          background-color: #24263f;
-          color: white;
+          background-color: variables.$second-bg-color;
+          color: variables.$white-color;
           resize: none;
           height: 150px;
           width: 500px;
@@ -71,16 +72,16 @@
         }
       }
       button {
-        color: white;
+        color: variables.$white-color;
         padding: 16px 50px;
-        background-color: #0a85ed;
+        background-color: variables.$primaryBtn-color;
         border: none;
         font-size: 1rem;
         font-weight: bold;
         margin-bottom: 20px;
         cursor: pointer;
         &:hover {
-          background-color: #2196fc;
+          background-color: variables.$hoverBtn-color;
         }
         &:active {
           transform: scale(0.96);
@@ -105,7 +106,7 @@
           text-decoration: none;
           a {
             font-size: 1.6rem;
-            color: white;
+            color: variables.$white-color;
             margin: 0 30px;
           }
           &:hover {
@@ -122,6 +123,12 @@
     margin-top: 10px;
     font-family: 'Ubuntu', sans-serif;
     z-index: 1;
-    color: rgba(209, 209, 209, 0.61);
+    color: variables.$credit-color;
+  }
+
+  .msg-success {
+    color: variables.$hoverBtn-color;
+    font-size: 0.9rem;
+    font-weight: bold;
   }
 }
