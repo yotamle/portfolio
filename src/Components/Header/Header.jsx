@@ -114,7 +114,7 @@ const Header = () => {
           <h2>full-stack developer</h2>
           <h2>with a passion for design.</h2>
           <Link to="projects" smooth="true" duration={1000}>
-            <button className="view-work">View my work.</button>
+            <button className="view-work">View my work</button>
           </Link>
         </div>
         <div className="my-icon">
