@@ -1,4 +1,4 @@
-@use '../../variables';
+
 
 .projects-container {
   height: auto;
@@ -12,7 +12,7 @@
     font-size: 1.8rem;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    color: variables.$white-color;
+    color: #fff;
   }
   .projects {
     font-family: 'Mulish', sans-serif;
@@ -23,14 +23,14 @@
     .project {
       width: 800px;
       height: auto;
-      background-color: variables.$second-bg-color;
+      background-color: #24263f;
       padding: 40px;
       border-radius: 10px;
-      color: variables.$white-color;
+      color: #fff;
       margin: 10px;
       .project-flex {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: flex-end;
         flex-direction: row;
         @media only screen and (max-width: 872px) {
@@ -56,19 +56,19 @@
         font-size: 0.9rem;
         .in-process {
           text-decoration: none;
-          color: variables.$white-color;
+          color: #fff;
           padding: 8px 10px;
-          background-color: variables.$primaryBtn-color;
+          background-color: #0a85ed;
           font-weight: bold;
         }
         a {
           text-decoration: none;
-          color: variables.$white-color;
+          color: #fff;
           padding: 8px 20px;
-          background-color: variables.$primaryBtn-color;
+          background-color: #0a85ed;
           font-weight: bold;
           &:hover {
-            background-color: variables.$hoverBtn-color;
+            background-color: #2196fc;
           }
         }
       }

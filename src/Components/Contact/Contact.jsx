@@ -61,7 +61,7 @@ const Contact = () => {
               <label>Message</label>
               <textarea name="user_message" required></textarea>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit">Send</button>
             {result ? <Result /> : null}
           </form>
         </div>

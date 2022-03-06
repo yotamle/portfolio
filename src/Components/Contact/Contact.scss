@@ -1,4 +1,4 @@
-@use '../../variables';
+
 .contact-container {
   height: auto;
   padding: 20px 10%;
@@ -8,7 +8,7 @@
   font-family: 'Mulish', sans-serif;
 
   .contact-me {
-    color: variables.$white-color;
+    color: #fff;
     text-align: center;
 
     .title {
@@ -18,7 +18,7 @@
     }
     span {
       font-size: 1rem;
-      color: variables.$lightgray-color;
+      color: lightgray;
     }
   }
 
@@ -33,7 +33,7 @@
           font-size: 1rem;
           display: block;
           margin: 20px 0;
-          color: variables.$white-color;
+          color: #fff;
           font-weight: bold;
         }
         input {
@@ -41,8 +41,8 @@
           width: 500px;
           height: 40px;
           border: none;
-          color: variables.$white-color;
-          background-color: variables.$second-bg-color;
+          color: #fff;
+          background-color: #24263f;
           font-size: 0.9rem;
           font-family: inherit;
 
@@ -56,8 +56,8 @@
         textarea {
           padding: 15px;
           border: none;
-          background-color: variables.$second-bg-color;
-          color: variables.$white-color;
+          background-color: #24263f;
+          color:#fff;
           resize: none;
           height: 150px;
           width: 500px;
@@ -72,16 +72,16 @@
         }
       }
       button {
-        color: variables.$white-color;
+        color: #fff;
         padding: 16px 50px;
-        background-color: variables.$primaryBtn-color;
+        background-color: #0a85ed;
         border: none;
         font-size: 1rem;
         font-weight: bold;
         margin-bottom: 20px;
         cursor: pointer;
         &:hover {
-          background-color: variables.$hoverBtn-color;
+          background-color: #2196fc;
         }
         &:active {
           transform: scale(0.96);
@@ -106,7 +106,7 @@
           text-decoration: none;
           a {
             font-size: 1.6rem;
-            color: variables.$white-color;
+            color:#fff;
             margin: 0 30px;
           }
           &:hover {
@@ -123,11 +123,11 @@
     margin-top: 10px;
     font-family: 'Ubuntu', sans-serif;
     z-index: 1;
-    color: variables.$credit-color;
+    color: #9e9d9d;
   }
 
   .msg-success {
-    color: variables.$hoverBtn-color;
+    color: #2196fc;
     font-size: 0.9rem;
     font-weight: bold;
   }
