@@ -1,4 +1,4 @@
-@use 'variables';
+@use '_variables';
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 * {
@@ -10,7 +10,7 @@
 .App {
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color: variables.$bg-color;
+  background-color:#131529;
   .fix-width {
     max-width: 1600px;
     margin: auto;
