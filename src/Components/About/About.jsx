@@ -2,12 +2,16 @@ import './About.scss';
 import ICONS from './icons';
 
 const About = () => {
+  const date = new Date();
+  const myYear = 1994
+
   return (
     <div className="about-container" id="about">
       <div className="bg-layer shape"></div>
       <h2 className="title">Who am I?</h2>
       <p>
-        I'm Yotam Levy, 27 years old and from Israel. Full-stack developer with
+        I'm Yotam Levy, {date.getFullYear() - myYear} years old from Israel. <br />
+        Full-stack developer with
         passion to explore and learn new things every day. Programming has been
         an interest of mine for many years. In my free time I love traveling, working out and play video
         games. I'm looking for my next challenge to take my programming skills
@@ -15,7 +19,7 @@ const About = () => {
       </p>
 
       <a
-        href="https://docs.google.com/document/d/1AckzgvEUqwhjNCBJ5M2rVEDhAg_PC6VK/edit?usp=sharing&ouid=100231535508318435485&rtpof=true&sd=true"
+        href="https://drive.google.com/file/d/1OF0ajD_ugY2LaBYxjq_SwZWbUCQJ-kCh/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
       >

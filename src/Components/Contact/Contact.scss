@@ -1,4 +1,3 @@
-
 .contact-container {
   height: auto;
   padding: 20px 10%;
@@ -8,7 +7,7 @@
   font-family: 'Mulish', sans-serif;
 
   .contact-me {
-    color: #fff;
+    color: black;
     text-align: center;
 
     .title {
@@ -18,7 +17,7 @@
     }
     span {
       font-size: 1rem;
-      color: lightgray;
+      color: gray;
     }
   }
 
@@ -33,7 +32,7 @@
           font-size: 1rem;
           display: block;
           margin: 20px 0;
-          color: #fff;
+          color: black;
           font-weight: bold;
         }
         input {
@@ -41,9 +40,10 @@
           width: 500px;
           height: 40px;
           border: none;
-          color: #fff;
-          background-color: #24263f;
+          color: black;
+          background-color: #ebebeb;
           font-size: 0.9rem;
+          font-weight: bold;
           font-family: inherit;
 
           &:focus {
@@ -56,12 +56,13 @@
         textarea {
           padding: 15px;
           border: none;
-          background-color: #24263f;
-          color:#fff;
+          background-color: #ebebeb;
+          color: black;
           resize: none;
           height: 150px;
           width: 500px;
           font-size: 0.9rem;
+          font-weight: bold;
           font-family: inherit;
           &:focus {
             outline: none;
@@ -74,14 +75,15 @@
       button {
         color: #fff;
         padding: 16px 50px;
-        background-color: #0a85ed;
+        background-color: #ff6700;
         border: none;
         font-size: 1rem;
         font-weight: bold;
         margin-bottom: 20px;
+        border-radius: 20px;
         cursor: pointer;
         &:hover {
-          background-color: #2196fc;
+          background-color: #ff6600ea;
         }
         &:active {
           transform: scale(0.96);
@@ -106,7 +108,7 @@
           text-decoration: none;
           a {
             font-size: 1.6rem;
-            color:#fff;
+            color: black;
             margin: 0 30px;
           }
           &:hover {
@@ -123,11 +125,12 @@
     margin-top: 10px;
     font-family: 'Ubuntu', sans-serif;
     z-index: 1;
-    color: #9e9d9d;
+    text-transform: uppercase;
+    color: black;
   }
 
   .msg-success {
-    color: #2196fc;
+    color: #ff6700;
     font-size: 0.9rem;
     font-weight: bold;
   }

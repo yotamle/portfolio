@@ -1,14 +1,13 @@
 
 .header {
   height: 100vh;
-  color: #fff;
   position: relative;
 
   .back-to-top {
     position: fixed;
     bottom: 15px;
     right: 15px;
-    background-color: #0a85ed;
+    background-color: #ff6700;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -17,6 +16,7 @@
     align-items:center;
     cursor: pointer;
     font-size: 1.2rem;
+    color: #fff;
   }
   .show_back-to-top {
     display: none;
@@ -29,7 +29,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    padding-left: 20%;    
+    padding-left: 20%;   
     .logo {
       font-size: 1.5rem;
       font-weight: bold;
@@ -42,6 +42,7 @@
       font-size: 1.5rem;
       cursor: pointer;
       display: none;
+      color: black;
     }
     @media only screen and (max-width: 872px) {
       padding: 5% 10% 0 10%;
@@ -68,7 +69,7 @@
         padding: 6px 15px;
         &:hover {
           border-radius: 5px;
-          background-color:#ffffff1a;
+          background-color:#ff66007e;
         }
       }
     }
@@ -91,7 +92,8 @@
         margin-bottom: 1.5rem;
       }
       strong {
-        color: #0a85ed;
+
+        color: #ff6700;
       }
       h2 {
         font-size: 2.8rem;
@@ -112,15 +114,16 @@
       .view-work {
         color: #fff;
         padding: 12px 24px;
-        background-color: #0a85ed;
+        background-color: #ff6700;
         border: none;
         font-size: 1rem;
         font-weight: bold;
         margin-top: 30px;
+        border-radius: 50px;
         cursor: pointer;
         font-family: 'Mulish', sans-serif;
         &:hover {
-          background-color:#2196fc;
+          background-color:#ff6600ea;
         }
         @media only screen and (max-width: 872px) {
           width: 98%;

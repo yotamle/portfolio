@@ -10,7 +10,7 @@ const Projects = () => {
           <div className="project-flex">
             <p>
               Home design landing page that offers new design for you. <br />
-              build with: html, scss, javascript.
+               technologies: <strong>javascript, HTML, sCSS</strong>.
             </p>
             <div>
               <span>
@@ -38,9 +38,8 @@ const Projects = () => {
           <h2>Countries Finder</h2>
           <div className="project-flex">
             <p>
-              Countries App with search by country and show information about
-              that country. <br />
-              react, rest api , css.
+              Countries Finder is a front-end application where you can get information about countries. <br />
+              technologies: <strong>ReactJS, Rest Api, HTML, CSS</strong>.
             </p>
             <div>
               <span>
@@ -68,10 +67,8 @@ const Projects = () => {
           <h2>Practice Programming</h2>
           <div className="project-flex">
             <p>
-              App where can you practice programming languages, see the
-              solution, and share with other people. <br />
-              front-end: react, css. <br />
-              back-end: node, mongodb, express.
+              Practice Programming is online website, where you can explore and learn program languages. <br />
+              technologies: <strong>ReactJS, Rest Api, HTML, CSS, nodejs, express, mongodb</strong>.
             </p>
             <div>
               <span>
@@ -93,9 +90,9 @@ const Projects = () => {
           <h2>My Portfolio</h2>
           <div className="project-flex">
             <p>
-              My personal portfolio where you can connect with me.
+            My personal website, where I can show my works, give information about myself and how to contact with me.
               <br />
-              build with react, scss.
+              technologies: <strong>ReactJS, SCSS</strong>.
             </p>
             <div>
               <span>

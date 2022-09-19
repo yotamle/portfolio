@@ -10,6 +10,8 @@ const Result = () => {
 };
 
 const Contact = () => {
+
+  const date = new Date();
   const formRef = useRef();
 
   const [result, showResult] = useState(false);
@@ -99,7 +101,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="c-by">
-        <small>© 2022 Yotam Levy</small>
+        <small>© {date.getFullYear()} Yotam Levy</small>
       </div>
     </div>
   );

@@ -11,16 +11,20 @@
   }
 
   .title {
+    color: black;
     font-size: 1.8rem;
     font-family: 'Ubuntu', sans-serif;
   }
 
    p {
+    color: black;
+    letter-spacing: 0.04rem;
     max-width: 350px;
     line-height: 2;
     margin: 20px 0;
     font-family: 'Mulish', sans-serif;
     font-size: 1.06rem;
+
     @media only screen and (max-width: 872px) {
       max-width: 300px;
     }
@@ -29,19 +33,20 @@
   .resume-btn {
     color: white;
     padding: 10px 24px;
-    background-color: #0a85ed;
+    background-color: #ff6700;
     border: none;
     font-size: 0.95rem;
     font-weight: bold;
     margin-top: 30px;
     cursor: pointer;
+    border-radius: 20px;
     font-family: 'Mulish', sans-serif;
     a {
       text-decoration: none;
       color: white;
     }
     &:hover {
-      background-color: #2196fc;
+      background-color: #ff6600ea;
       transform: scale(1.02);
     }
   }
@@ -49,6 +54,7 @@
 
   .skills {
     margin: 6% 0;
+    color: black;
     @media only screen and (max-width: 872px) {
       margin-top: 10%;
     }
