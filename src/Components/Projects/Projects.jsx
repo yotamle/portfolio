@@ -3,7 +3,7 @@ import './Projects.scss';
 const Projects = () => {
   return (
     <div className="projects-container" id="projects">
-      <h2 className="title">Projects</h2>
+      <h2 className="title">Interesting projects I’ve done</h2>
       <div className="projects">
         <div className="project">
           <h2>Home Design</h2>

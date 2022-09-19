@@ -40,22 +40,22 @@ const Header = () => {
         </li>
         <li>
           <Link
-            to="projects"
-            smooth="true"
-            duration={1000}
-            onClick={() => setMenu(!menu)}
-          >
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link
             to="about"
             smooth="true"
             duration={1000}
             onClick={() => setMenu(!menu)}
           >
             About
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="projects"
+            smooth="true"
+            duration={1000}
+            onClick={() => setMenu(!menu)}
+          >
+            Projects
           </Link>
         </li>
         <li>
@@ -89,13 +89,13 @@ const Header = () => {
         <ul className="navbar-ul">
           <li>Home</li>
           <li>
-            <Link to="projects" smooth="true" duration={1000}>
-              Projects
+            <Link to="about" smooth="true" duration={1000}>
+              About
             </Link>
           </li>
           <li>
-            <Link to="about" smooth="true" duration={1000}>
-              About
+            <Link to="projects" smooth="true" duration={1000}>
+              Projects
             </Link>
           </li>
           <li>

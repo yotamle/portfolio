@@ -67,9 +67,11 @@
         font-size: 0.92rem;
         font-weight: bold;
         padding: 6px 15px;
+
         &:hover {
           border-radius: 5px;
           background-color:#ff66007e;
+          color: white;
         }
       }
     }

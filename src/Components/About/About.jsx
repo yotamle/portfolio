@@ -3,14 +3,14 @@ import ICONS from './icons';
 
 const About = () => {
   const date = new Date();
-  const myYear = 1994
+  const myBirthyear = 1994
 
   return (
     <div className="about-container" id="about">
       <div className="bg-layer shape"></div>
-      <h2 className="title">Who am I?</h2>
+      <h2 className="title">A little about myself</h2>
       <p>
-        I'm Yotam Levy, {date.getFullYear() - myYear} years old from Israel. <br />
+        I'm Yotam Levy, {date.getFullYear() - myBirthyear} years old from Israel. <br />
         Full-stack developer with
         passion to explore and learn new things every day. Programming has been
         an interest of mine for many years. In my free time I love traveling, working out and play video
